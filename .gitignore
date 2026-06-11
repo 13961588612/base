@@ -1,0 +1,91 @@
+# === 依赖目录 ===
+node_modules/
+.pnpm-store/
+
+# Python / uv
+.venv/
+venv/
+env/
+.python-version
+
+# === 构建产物 ===
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+*.tsbuildinfo
+
+# === 环境变量与密钥（保留 .env.example）===
+.env
+.env.*
+!.env.example
+
+# === 日志与调试 ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === 测试与覆盖率 ===
+coverage/
+.nyc_output/
+htmlcov/
+.pytest_cache/
+.coverage
+.coverage.*
+.tox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# === Python 运行时 ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# === AI / Agent 本地数据（向量库、checkpoint、工作区）===
+.chroma/
+chroma_data/
+*.sqlite3
+*.db
+.langgraph/
+checkpoints/
+workspace/
+.agent_workspace/
+
+# === 编辑器与 IDE ===
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+
+# === 操作系统 ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === 杂项本地配置 ===
+*.local
+.cache/
+.temp/
+tmp/
+temp/
+
+# === Windows / .NET 残留（编辑器偶发）===
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

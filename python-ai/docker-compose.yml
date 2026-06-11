@@ -1,0 +1,27 @@
+# Python AI Agent 本地基础设施
+# 用途：LangGraph Postgres checkpointer、pgvector（P2+）
+#
+# 启动：docker compose up -d
+# 连接：postgresql://agent:agent@localhost:5433/agent_dev
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: python-ai-postgres
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: agent
+      POSTGRES_PASSWORD: agent
+      POSTGRES_DB: agent_dev
+    volumes:
+      - python_ai_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agent -d agent_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  python_ai_pg_data:

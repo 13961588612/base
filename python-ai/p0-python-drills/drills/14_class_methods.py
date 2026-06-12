@@ -16,6 +16,11 @@ class Message:
 
     def preview(self, max_len: int = 40) -> str:
         # TODO: 实现预览字符串
+        if len(self.content) > max_len:
+            return f"[{self.role}] {self.content[:max_len]}..."
+        else:
+            return f"[{self.role}] {self.content}"    
+
         raise NotImplementedError
 
 

@@ -12,6 +12,11 @@ safe_divide(a, b)：
 
 def safe_divide(a: float, b: float) -> float | None:
     # TODO: 用 try/except 或 if 实现
+    try:
+      return a/b
+    except ZeroDivisionError:
+      return  None
+
     raise NotImplementedError
 
 

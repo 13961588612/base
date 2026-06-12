@@ -18,7 +18,10 @@ class Message:
 class ToolMessage(Message):
     # TODO: 调用 super().__init__，并设置 tool_name
     def __init__(self, tool_name: str, content: str) -> None:
-        raise NotImplementedError
+        super().__init__("tool",content)
+        self.tool_name = tool_name
+
+        #raise NotImplementedError
 
 
 if __name__ == "__main__":

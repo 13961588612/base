@@ -15,11 +15,19 @@
 
 def formal_greet(name: str) -> str:
     # TODO: from drill_helpers import greet
+
+    from drill_helpers import greet 
+    return greet(name)+"!"
+
     raise NotImplementedError
 
 
 def sum_pair(a: int, b: int) -> int:
     # TODO: 使用 drill_helpers.add
+
+    from drill_helpers import add
+    return add(a,b)
+    
     raise NotImplementedError
 
 

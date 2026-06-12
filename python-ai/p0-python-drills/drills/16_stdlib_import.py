@@ -11,6 +11,9 @@
 
 def circle_area(radius: float) -> float:
     # TODO: import math 并计算面积
+    import math
+    return math.pi*math.pow(radius,2)
+    
     raise NotImplementedError
 
 

@@ -43,6 +43,26 @@ pip install uv
 |--------|------|------|
 | [reactjs](./reactjs/LEARNING_PLAN.md) | React 18/19 + Next.js 全栈 | **v1.1 可执行** |
 | [python-ai](./python-ai/LEARNING_PLAN.md) | Python AI Agent（LangChain / LangGraph / DeepAgents） | **v1.1 可执行** |
+| [openharness](./openharness/LEARNING_PLAN.md) | OpenHarness · 公司统一 Agent 后端 | **v1.0 可执行** |
+| [copilotkit-a2ui](./copilotkit-a2ui/LEARNING_PLAN.md) | CopilotKit + A2UI · Agent 客户端 | **v1.0 可执行** |
+
+### 四轨关系
+
+| 轨道 | 角色 | 建议顺序 |
+|------|------|----------|
+| reactjs | React / Next.js 基础与设计系统组件 | P0–P1 先行 |
+| python-ai | Agent **业务逻辑**（Tool/RAG/LangGraph） | 先完成 P0 |
+| copilotkit-a2ui | Agent **Web 客户端**（CopilotKit + A2UI Catalog） | reactjs P0–P1 后；W9 接 python-ai |
+| openharness | Agent **运行时与治理**（Gateway/MCP/IM 通道） | python-ai P0 后并行 |
+
+```
+Web 用户 ──► copilotkit-a2ui (AG-UI + A2UI)
+                │
+                ▼
+         python-ai LangGraph (业务 Agent)
+                ▲
+飞书/Slack ──► openharness Gateway
+```
 
 ## 使用方式
 

@@ -31,7 +31,17 @@ p0-python-drills/
 | 18–19 | 异常处理 |
 | 20 | 综合：读 JSON 文件并统计 |
 
-每题文件顶部有题目说明，在 `# TODO:` 下写代码。用 `python drills/01_variables.py` 自测。
+每题文件顶部有题目说明，在 `# TODO:` 下写代码。
+
+```bash
+cd python-ai/p0-python-drills
+
+# 单题自测
+python drills/01_variables.py
+
+# 批量运行（20 题全过 → 可进 W2）
+python run_all.py
+```
 
 ## Todo 项目要求（W1 后半）
 

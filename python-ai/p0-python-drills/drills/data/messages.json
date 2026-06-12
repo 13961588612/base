@@ -1,0 +1,7 @@
+[
+  {"role": "user", "content": "你好"},
+  {"role": "assistant", "content": "你好，有什么可以帮你？"},
+  {"role": "user", "content": "学 Python"},
+  {"role": "tool", "content": "search result"},
+  {"role": "user", "content": "谢谢"}
+]

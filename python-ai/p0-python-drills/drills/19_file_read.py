@@ -15,6 +15,15 @@ from pathlib import Path
 
 def read_nonempty_lines(path: Path) -> list[str]:
     # TODO: path.read_text(encoding="utf-8") 并按行处理
+    content = path.read_text(encoding="utf-8")
+    lines : list[str] = content.splitlines()
+    resultLines : list[str] = []
+    for line in lines:
+        if line.strip():
+          resultLines.append(line.strip())
+
+    return resultLines
+    
     raise NotImplementedError
 
 

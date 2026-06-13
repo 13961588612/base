@@ -13,10 +13,10 @@
 def greet(name: str, loud: bool = False) -> str:
     # TODO: 注意默认参数 loud=False
     if(not loud):
-      return f"hello,{name}"
+      return f"hello, {name}"
     else:
       return name.upper();  
-      
+
     raise NotImplementedError
 
 

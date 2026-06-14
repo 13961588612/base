@@ -106,6 +106,8 @@ W2 写 `@tool` 时回来对照本节。
 - [ ] 命令行 Todo：add / list / done / save
 - [ ] 能口述：函数 vs 类、何时用 dict
 
+费曼笔记见 **[w1-feynman-notes.md](./w1-feynman-notes.md)**（list vs dict · import vs 读文件 · 函数 vs 类）。
+
 ## 推荐资源
 
 - [Python 官方教程](https://docs.python.org/3/tutorial/) — 第 1–9 章（本周主线）

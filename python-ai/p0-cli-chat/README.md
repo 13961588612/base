@@ -4,14 +4,26 @@ P0 阶段产物：LLM 流式对话 CLI，为后续 Agent 开发打基础。
 
 > **前置**：完成 W1 `p0-python-drills`（Python 1/5 禁止跳过）。
 
-## 初始化（W2 周一）
-
-在 `python-ai/p0-cli-chat` 目录执行：
+## 初始化（W2 周一）✅
 
 ```bash
+# 已执行（PyPI 慢时可设镜像）
+# $env:UV_INDEX_URL = "https://pypi.tuna.tsinghua.edu.cn/simple"
 uv init --python 3.12 .
 uv add langchain langchain-openai langchain-anthropic python-dotenv rich typer
 ```
+
+## pyproject.toml 速读（W2 周一）
+
+| 字段 | 含义 |
+|------|------|
+| `[project]` | 包元数据：名称、版本、Python 版本要求 |
+| `dependencies` | 运行时依赖（`uv add` 会写入这里） |
+| `requires-python` | 最低 Python 版本 |
+| `uv.lock` | 锁定全部传递依赖版本，保证 `uv sync` 可复现 |
+| `.venv/` | 项目虚拟环境（勿提交 Git） |
+
+常用命令：`uv sync` · `uv add <pkg>` · `uv run python -m src.main`
 
 ## 目标功能
 

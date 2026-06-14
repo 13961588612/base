@@ -1,0 +1,14 @@
+[project]
+name = "p0-cli-chat"
+version = "0.1.0"
+description = "P0 多轮 CLI 对话：uv + LangChain + 流式输出"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.3.9",
+    "langchain-anthropic>=1.4.6",
+    "langchain-openai>=1.3.0",
+    "python-dotenv>=1.2.2",
+    "rich>=15.0.0",
+    "typer>=0.26.7",
+]
